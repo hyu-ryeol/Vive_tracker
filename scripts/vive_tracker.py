@@ -18,7 +18,7 @@ def vive_tracker():
     broadcaster = { }
     publisher = { }
     listener = tf.TransformListener()
-    rate = rospy.Rate(500) # 100hz]
+    rate = rospy.Rate(100) # 100hz]
     deviceCount = 0
     
 
@@ -159,7 +159,8 @@ def vive_tracker():
 
 
 
-                    # x+=0; y+=-1.352; 
+                    x+=0.2; 
+                    # y+=0.5; 
                     z+=0.8
 
 
